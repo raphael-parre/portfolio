@@ -1,0 +1,4 @@
+A faire : bien remettre l'onglet soft skills à la même hauteur et recentré les onglets compétences.
+- Remettre l'effet d'image gris puis coloré quand on le survole.
+- Changer la description de chaque logiciel et SAE.
+- changer les SAE et modifier photo.

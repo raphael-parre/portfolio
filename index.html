@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphaël Parre | Portfolio Réseaux & Cybersécurité</title>
+    <meta name="description" content="Portfolio de Raphaël Parre. Étudiant en Réseaux, Télécommunications et Cybersécurité à l'IUT de Blois. Stagiaire Cybersécurité chez EDF CNPE.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        document.documentElement.classList.add('js-enabled');
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR (Editorial Floating Style) -->
+    <nav class="navbar">
+        <a href="#" class="logo">RAPHAËL P<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#expertises">Compétences</a></li>
+            <li><a href="#logiciels">Logiciels</a></li>
+            <li><a href="#projets">Travaux</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact" class="btn-nav">Contact <i class="fas fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+        <div class="theme-switch-container">
+            <button id="theme-toggle" class="theme-btn" aria-label="Changer de thème">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Dymas Alfin Style: Centered massive texts, no photo) -->
+    <header class="hero">
+        <div class="hero-bg-text">
+            <span>RAPHAËL</span>
+            <span class="text-outline">PARRE</span>
+        </div>
+
+        <div class="hero-container" style="justify-content: center; min-height: 60vh;">
+            <div class="status-badge reveal">
+                <span class="status-dot"></span>
+                <span>Disponible pour une alternance (Rentrée 2026)</span>
+            </div>
+
+            <h1 class="hero-title-sub reveal" style="margin-top: 2rem;">CYBER & RÉSEAUX</h1>
+            <p class="hero-desc reveal" style="text-align: center;">
+                Étudiant en <strong>BUT Réseaux et Télécommunications spécialité Cybersécurité</strong>. Fort d'une expérience opérationnelle en cybersécurité industrielle chez <strong>EDF (CNPE de Saint-Laurent)</strong> en milieu classé OIV.
+            </p>
+
+            <div class="hero-socials reveal">
+                <a href="#projets" class="btn-pill btn-pill-primary">Découvrir mes projets <i class="fas fa-arrow-right"></i></a>
+                <a href="CV_Parre_Raphael_Alternance.pdf" target="_blank" class="btn-pill">Consulter mon CV (PDF)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+
+        <!-- PARCOURS SECTION -->
+        <section id="parcours" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">01 / HISTORIQUE</span>
+                <h2 class="section-title">Parcours & Expérience</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-left">
+                    <p>
+                        Mon projet professionnel s'articule autour de la <strong>cybersécurité, de l'audit et de l'administration réseau</strong>. 
+                    </p>
+                    <p>
+                        Mon stage au sein de l'Accueil Protection de Site du <strong>CNPE de Saint-Laurent (EDF)</strong> m'a permis d'appréhender la cybersécurité industrielle en milieu classé <strong>OIV (Opérateur d'Importance Vitale)</strong>, renforçant mes compétences en analyse de risques (méthode EBIOS RM), coopération avec le SOC et matrices de conformité réglementaire.
+                    </p>
+                    <p>
+                        À l'IUT de Blois, je développe une approche pragmatique et technique des infrastructures via des projets d'architecture d'entreprise réels (Cisco, VPN IPsec, serveurs Web/Windows/DNS, routage et scripts d'automatisation).
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <!-- EDF STAGE -->
+                    <div class="timeline-card" style="border-left: 3px solid var(--accent);">
+                        <span class="timeline-date">Avril 2026 — Juillet 2026</span>
+                        <h3>Stagiaire Projet & Cybersécurité</h3>
+                        <div class="timeline-org">EDF — CNPE de Saint-Laurent (Milieu OIV / LPM)</div>
+                        <p class="timeline-body">
+                            • <strong>Analyse de risques (EBIOS RM)</strong> : Réalisation d'études de risques sur la dématérialisation des rondes physiques.<br>
+				    • <strong>Gestion de projet et déploiement d'outil de suivi</strong> : Déploiement d'un nouvel outil de suivi des activités basé sur le retour sur expérience du personnelle et des CNPE de Belleville.<br>
+                            • <strong>Audit & Conformité</strong> : Création d'une matrice de conformité sécurité physique/logique et tableau de bord automatisé.<br>
+                            • <strong>Supervision SOC/PDIS</strong> : Qualification, traitement des alertes du réseau industriel et optimisation des règles de détection et création de fiches réflexes en collaboration avec le SOC National.
+                        </p>
+                    </div>
+
+                    <!-- UNIVERSITY -->
+                    <div class="timeline-card">
+                        <span class="timeline-date">2024 — 2027</span>
+                        <h3>BUT Réseaux & Télécommunications</h3>
+                        <div class="timeline-org">IUT de Blois — Université de Tours</div>
+                        <p class="timeline-body">Spécialisation Cybersécurité. Déploiement de réseau d'entreprise sécurisé complet, administration système avancée, configuration d'équipement réseau Cisco, tests d'intrusion et analyses de risques.</p>
+                    </div>
+
+                    <!-- BACCALAUREAT -->
+                    <div class="timeline-card">
+                        <span class="timeline-date">2024</span>
+                        <h3>Baccalauréat Général</h3>
+                        <div class="timeline-org">Lycée François Villon</div>
+                        <p class="timeline-body">Spécialités : Mathématiques et NSI (Numérique et Sciences Informatiques).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES SECTION -->
+        <section id="expertises" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">02 / CAPACITÉS</span>
+                <h2 class="section-title">Compétences</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <h3><i class="fas fa-shield-halved"></i> Cybersécurité</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Méthode EBIOS RM (ANSSI) : appliqué en coditions réelles sur un site OIV (CNPE)</span>
+                        <span class="skill-tag">Test de pénétration : Kali Linux, Nmap, Metasploit, Gobuster, Hydra, Linpeas, SQLmap</span>
+                        <span class="skill-tag">Analyse de risque & audit : mesures compensatoires, rapport d'audit</span>
+                        <span class="skill-tag">Outils de cyber (Nmap, Metasploit, Gobuster, Hydra)</span>
+                        <span class="skill-tag">SOC/PDIS : création de fiches réflexe, supervision et détection d'incidents</span>
+                        <span class="skill-tag">CTF & formation en autodidacte : parcours TryHackMe, CTF à Blois, certification Cisco</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-network-wired"></i> Réseaux & Systèmes</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Cisco IOS : configuration d'équipement réseau Cisco (Routeur/Switch)</span>
+                        <span class="skill-tag">Administration système (Linux Debian & Windows Server)</span>
+                        <span class="skill-tag">Architecture réseau sécurisé</span>
+				<span class="skill-tag">VLAN, pare-feu, VPN, mail</span>
+                        <span class="skill-tag">Service réseau : DNS, HTTPS, DHCP, SMTPS, OSPF</span>
+                        <span class="skill-tag">Virtualisation : VirtualBox, Docker</span>
+				<span class="skill-tag">Défense réseau : défense sur Routeur/Switch contre attaque cyber (MAC flooding, DHCP snooping, ARP poisoning)</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-users-gear"></i> Programmation</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python: scripting et automatisation</span>
+				<span class="skill-tag">Java : création d'application de messagerie sécurisée</span>
+                        <span class="skill-tag">SQL & bases de données</span>
+                        <span class="skill-tag">Bash : automatisation des tâches</span>
+                    </div>
+                </div>
+
+		    <div class="skills-grid">
+                <div class="skills-card">
+                    <h3><i class="fas fa-shield-halved"></i> Soft skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Pédagogie et communication : Vulgarisation de la cyber et du réseau</span>
+                        <span class="skill-tag">Adaptabilité : facilité à m'adapter à un nouvel environnement</span>
+                        <span class="skill-tag">Proactivité : anticipation des blocages et propositions d'amélioration</span>
+                        <span class="skill-tag">Esprit de synthèse et d'analyse : traitement et résolution de l'information de manière proactive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGICIELS SECTION -->
+        <section id="logiciels" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">03 / LOGICIELS</span>
+                <h2 class="section-title">Logiciels Exploités</h2>
+            </div>
+            
+            <div class="software-container">
+                <!-- CYBERSÉCURITÉ -->
+                <div class="software-category-group">
+                    <h3 class="software-category-title"><i class="fas fa-user-shield"></i> Cybersécurité</h3>
+                    <div class="software-grid">
+                        <div class="software-logo-card" data-software-id="kali-linux">
+                            <img src="icons/kali_logo.avif" alt="Logo Kali Linux" class="software-logo-img">
+                            <span>Kali Linux</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="nmap">
+                            <img src="icons/nmap.png" alt="Logo Nmap" class="software-logo-img">
+                            <span>Nmap</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="metasploit">
+                            <img src="icons/metasploit.png" alt="Logo Metasploit" class="software-logo-img">
+                            <span>Metasploit</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="burpsuite">
+                            <img src="icons/BurpSuite_logo.png" alt="Logo BurpSuite" class="software-logo-img"></i>
+                            <span>Burp Suite</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="hydra">
+                            <img src="icons/hydra-logo.png" alt="Logo Hydra" class="software-logo-img">
+                            <span>Hydra</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="gobuster">
+                            <img src="icons/gobuster-logo.svg" alt="Logo Gobuster" class="software-logo-img">
+                            <span>Gobuster</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="wireshark">
+                            <img src="icons/Wireshark.png" alt="Logo Wireshark" class="software-logo-img">
+                            <span>Wireshark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RÉSEAUX & SYSTÈMES -->
+                <div class="software-category-group" style="margin-top: 3rem;">
+                    <h3 class="software-category-title"><i class="fas fa-network-wired"></i> Réseaux & Systèmes</h3>
+                    <div class="software-grid">
+                        <div class="software-logo-card" data-software-id="cisco">
+                            <img src="icons/Cisco_logo.png" alt="Cisco IOS" class="software-logo-img">
+                            <span>Cisco IOS</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="cisco-pt">
+                            <img src="icons/Cisco_packet_tracer.webp" alt="Logo Cisco Packet Tracer" class="software-logo-img">
+                            <span>Cisco Packet Tracer</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="linux">
+                            <i class="devicon-linux-plain"></i>
+                            <span>Linux Debian</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="windows">
+                            <i class="devicon-windows8-original"></i>
+                            <span>Windows Server</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="virtualbox">
+                            <img src="icons/virtualbox.png" alt="Logo VirtualBox" class="software-logo-img">
+                            <span>VirtualBox</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="docker">
+                            <i class="devicon-docker-plain"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="mysql">
+                            <i class="devicon-mysql-plain"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="git">
+                            <i class="devicon-git-plain"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="bash">
+                            <i class="devicon-bash-plain"></i>
+                            <span>Bash Scripting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CODE & DÉVELOPPEMENT -->
+                <div class="software-category-group" style="margin-top: 3rem;">
+                    <h3 class="software-category-title"><i class="fas fa-code"></i> Code & Développement</h3>
+                    <div class="software-grid">
+                        <div class="software-logo-card" data-software-id="vscode">
+                            <i class="devicon-vscode-plain"></i>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="eclipse">
+                            <i class="devicon-eclipse-plain"></i>
+                            <span>Eclipse</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="python">
+                            <i class="devicon-python-plain"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TÉLÉCOMMUNICATIONS -->
+                <div class="software-category-group" style="margin-top: 3rem;">
+                    <h3 class="software-category-title"><i class="fas fa-satellite-dish"></i> Télécommunications</h3>
+                    <div class="software-grid">
+                        <div class="software-logo-card" data-software-id="mmana-gal">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span>MMANA-GAL Basic</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="octave">
+                            <img src="icons/Gnu-octave-logo.png" alt="Logo GNU Octave" class="software-logo-img">
+                            <span>GNU Octave</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="labview">
+                            <img src="icons/labview-logo.webp" alt="Logo LabVIEW" class="software-logo-img">
+                            <span>LabVIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUREAUTIQUE -->
+                <div class="software-category-group" style="margin-top: 3rem;">
+                    <h3 class="software-category-title"><i class="fas fa-briefcase"></i> Bureautique</h3>
+                    <div class="software-grid">
+                        <div class="software-logo-card" data-software-id="excel">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel</span>
+                        </div>
+                        <div class="software-logo-card" data-software-id="office365">
+                            <img src="icons/Office-365.png" alt="Logo suite Office 365" class="software-logo-img">
+                            <span>Suite Office 365</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAVAUX SECTION -->
+        <section id="projets" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">04 / SÉLECTION</span>
+                <h2 class="section-title">Projets d'Études</h2>
+            </div>
+
+            <!-- Search bar & filters -->
+            <div class="portfolio-controls">
+                <div class="portfolio-search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="portfolio-search" id="portfolioSearch" placeholder="Rechercher un projet...">
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="reseaux">Réseaux</button>
+                    <button class="filter-btn" data-filter="cyber">Cyber</button>
+                    <button class="filter-btn" data-filter="telecom">Télécoms</button>
+                </div>
+            </div>
+            <p class="portfolio-count" id="portfolioCount"><span id="portfolioCountNum">4</span> projet(s) affiché(s)</p>
+
+            <div class="projects-grid">
+                <!-- PROJECT 1 -->
+                <div class="project-card" data-id="sae-reseau-sec" data-category="reseaux" data-title="reseau entreprise securise vpn ipsec https dns mail postfix">
+                    <div class="project-preview">
+                        <img src="Structure_Reseau_Frain_Parre.png" alt="Architecture Réseau">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>RÉSEAUX & SÉCURITÉ</span>
+                            <span>•</span>
+                            <span>BUT 2</span>
+                        </div>
+                        <h3>SAE Réseau — Infrastructure & Attaque/Défense</h3>
+                        <p class="project-desc">Déploiement complet d'une infrastructure d'entreprise sécurisée par VPN IPsec et serveurs chiffrés, validé par un exercice de confrontation.</p>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="project-card" data-id="sae-cyber-audit" data-category="cyber" data-title="cyber audit vulnérabilités owasp top 10 dvwa sql injection brute force nmap">
+                    <div class="project-preview">
+                        <img src="CR/Nmap.png" alt="Audit Nmap" style="object-position: top;">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>CYBERSÉCURITÉ OFFENSIVE</span>
+                            <span>•</span>
+                            <span>BUT 2</span>
+                        </div>
+                        <h3>SAE Cyber — Exploitation OWASP & Audit</h3>
+                        <p class="project-desc">Audit applicatif DVWA sur failles d'injection, brute force et élévation de privilèges, avec rédaction de rapports correctifs.</p>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="project-card" data-id="sae-cisco-pt" data-category="reseaux" data-title="cisco packet tracer routage ospf nat pat vlan double pile ipv4 ipv6 stp">
+                    <div class="project-preview">
+                        <img src="SAE201/images/entreprise_photo.png" alt="SAÉ 2.01 : Architecture Réseau & Services">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>SIMULATION CISCO</span>
+                            <span>•</span>
+                            <span>BUT 1</span>
+                        </div>
+                        <h3>SAÉ 2.01 : Architecture Réseau & Services</h3>
+                        <p class="project-desc">Conception d'une architecture réseau d'entreprise complète avec accès Internet.</p>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4 -->
+                <div class="project-card" data-id="sae-telecom-radio" data-category="telecom" data-title="télécommunications radio diagramme rayonnement bilan liaison antennes am fm">
+                    <div class="project-preview">
+                        <img src="SAE301 Systeme de communication radio/ant_yagi.png" alt="SAE Télécom — Modélisation Radio & Antennes">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>TÉLÉCOMMUNICATIONS</span>
+                            <span>•</span>
+                            <span>Semestre 3 — 2025</span>
+                        </div>
+                        <h3>SAE Télécom — Modélisation Radio & Antennes</h3>
+                        <p class="project-desc">Simulation physique et calculs d'atténuation et bilans de liaisons pour antennes AM/FM directionnelles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-results-msg" id="noResultsMsg" style="display:none;">
+                <i class="fas fa-search"></i>
+                <p>Aucun projet ne correspond à votre recherche.</p>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">05 / QUESTIONS</span>
+                <h2 class="section-title">En savoir plus</h2>
+            </div>
+
+            <div class="faq-section">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quel type de contrat d'alternance recherchez-vous ?</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Je recherche un contrat d'apprentissage ou de professionnalisation dans le cadre de ma 3e année de BUT Réseaux et Télécommunications (spécialisation cybersécurité), débutant à la rentrée 2026.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quels sont vos acquis en administration système ?</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>J'administre des serveurs sous Linux Debian/Ubuntu et Windows Server, gérant des rôles d'annuaire (Active Directory), des serveurs DNS (Bind9), des serveurs Web (Apache, Nginx en HTTPS) et la conteneurisation d'applications via Docker.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quel rôle avez-vous joué pendant votre stage chez EDF ?</span>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>En tant que stagiaire Cybersécurité chez EDF CNPE de Saint-Laurent, j'ai qualifié et traité des incidents en lien avec le SOC national, mené des analyses EBIOS RM sur des solutions numériques critiques, et créé des matrices de conformité liant sécurité physique et logique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">06 / ÉCHANGE</span>
+                <h2 class="section-title">Créer un contact</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h2>Travaillons <br><span class="serif-text">ensemble.</span></h2>
+                    <p>
+                        Intéressé par mon profil ou mes réalisations ? Laissez-moi un message pour planifier un entretien ou discuter de vos besoins en réseaux et sécurité !
+                    </p>
+                    <div class="contact-details" style="display:flex; flex-direction:column; gap:1.2rem;">
+                        <div style="display:flex; align-items:center; gap:15px;">
+                            <i class="fas fa-envelope" style="color:var(--text-muted);"></i>
+                            <a href="mailto:raphaelp642417@gmail.com" style="font-weight:600;">raphaelp642417@gmail.com</a>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:15px;">
+                            <i class="fas fa-location-dot" style="color:var(--text-muted);"></i>
+                            <span>Blois / Tours, France</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form action="mailto:raphaelp642417@gmail.com" method="post" enctype="text/plain" style="width:100%;">
+                        <div class="form-group">
+                            <input type="text" id="name" name="nom" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Votre nom</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Votre adresse email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input" placeholder=" " rows="4" style="resize:vertical;" required></textarea>
+                            <label for="message" class="form-label">Message...</label>
+                        </div>
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn-pill btn-pill-primary">Envoyer <i class="fas fa-arrow-up-right-from-square"></i></button>
+                            <span class="form-terms">En soumettant ce formulaire, vous acceptez d'ouvrir votre messagerie par défaut pour finaliser l'envoi de l'email.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <ul class="footer-nav">
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#expertises">Compétences</a></li>
+            <li><a href="#logiciels">Logiciels</a></li>
+            <li><a href="#projets">Travaux</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="footer-socials">
+            <a href="#" class="social-circle" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-circle" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:raphaelp642417@gmail.com" class="social-circle" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Raphaël Parre. Tous droits réservés.</p>
+    </footer>
+
+    <!-- DYNAMIC TECHNICAL DETAILS MODAL -->
+    <div id="project-modal" class="modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" aria-label="Fermer le modal"><i class="fas fa-times"></i></button>
+            <div id="modal-content">
+                <!-- Injected dynamically by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script inclusion -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
