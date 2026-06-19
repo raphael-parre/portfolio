@@ -282,7 +282,7 @@ intranet IN A 192.168.3.3`
       role: "Outil d'audit offensif & Pentesting",
       purpose: "Distribution Linux dédié à la cybersécurité et aux tests de pénétration, préinstallée avec des centaines d'outils offensifs.",
       description: "Kali Linux est la distribution standard de l'industrie pour les audits de sécurité. Elle regroupe des centaines d'outils spécialisés dans la recherche de vulnérabilités, l'analyse réseau, l'exploitation de failles et le reverse engineering.",
-      usage: "Utilisé lors de la SAE3.Cyber04 pour cartographier le réseau (Nmap), intercepter les flux (Wireshark), tester la robustesse des mots de passe (Hydra) et analyser la sécurité applicative.",
+      usage: "Utilisé lors de la SAE3.Cyber04 pour cartographier le réseau, ensuite intercepter les flux avec Wireshark, tester la robustesse des mots de passe avec Hydra et analyser la sécurité applicative.",
       icon: "icons/kali_logo.avif"
     },
     "nmap": {
@@ -295,57 +295,57 @@ intranet IN A 192.168.3.3`
       icon: "icons/nmap.png"
     },
     "metasploit": {
-      title: "Metasploit Framework",
+      title: "Metasploit",
       category: "Cybersécurité",
-      role: "Tests d'intrusion & Exploitation",
-      purpose: "Recherche de vulnérabilités, développement d'exploits et exécution de charges utiles.",
-      description: "Metasploit est une plateforme de test d'intrusion de classe mondiale. Il permet aux professionnels de la sécurité de tester les vulnérabilités de systèmes informatiques en simulant des cyberattaques de manière contrôlée.",
-      usage: "Étudié et manipulé en laboratoire pour comprendre les mécanismes d'exploitation de vulnérabilités logicielles communes.",
+      role: "Tests d'exploitation de vulnérabilités",
+      purpose: "Plateforme open source de recherche de vulnérabilités, développement et exécution d'exploits contre des systèmes.",
+      description: "Metasploit est le framework d'exploitation le plus utilisé en pentest. Il permet d'avoir accès à des milliers d'exploits, payload et modules auxilière permettant d'automatiser l'exploitation de failles et de gérer des sessions d'accès distant.",
+      usage: "Utilisé en SAE3.Cyber04 pour exploiter des vulnérabilités identifiées sur la machine cible et obtenir des accès privilégiés dans un environnement de lab isolé.",
       icon: "icons/metasploit.png"
     },
     "burpsuite": {
       title: "Burp Suite",
       category: "Cybersécurité",
-      role: "Proxy d'interception Web",
-      purpose: "Analyse et audit de sécurité des applications Web en interceptant le trafic HTTP/HTTPS.",
-      description: "Burp Suite est la boîte à outils leader pour l'audit d'applications Web. Il agit comme un proxy intermédiaire, permettant d'intercepter les paquets, de modifier des requêtes à la volée (Burp Repeater), et d'automatiser des tests d'injection.",
-      usage: "Utilisé dans la SAÉ 3.Cyber04 pour intercepter les requêtes d'authentification DVWA et forcer les variables de session.",
+      role: "Proxy HTTP d'interception et audit d'applications Web",
+      purpose: "Suite d'outil dédiés à l'analyse et l'audit de sécurité des applications Web en interceptant et modifiant le trafic HTTP/HTTPS.",
+      description: "Burp Suite est la boîte à outils leader pour l'audit d'applications Web. Il agit comme un proxy intermédiaire, permettant d'intercepter les paquets, de modifier des requêtes et réponses, et d'automatiser des tests d'injection.",
+      usage: "Utilisé dans la SAÉ3.Cyber04 pour analyser les échanges HTTP, intercepter les requêtes d'authentification Captcha de DVWA et exploiter les variables de session.",
       icon: "icons/BurpSuite_logo.png"
     },
     "hydra": {
-      title: "THC Hydra",
+      title: "Hydra",
       category: "Cybersécurité",
-      role: "Casseur d'authentification réseau",
-      purpose: "Brute-force parallélisé de mots de passe sur divers protocoles applicatifs.",
-      description: "Hydra est un casseur de connexion réseau ultra-rapide capable de mener des attaques par dictionnaire ou par force brute sur plus de 50 protocoles, dont SSH, FTP, HTTP (GET/POST Form), SMB et VNC.",
-      usage: "Utilisé lors de la SAÉ 3.Cyber04 pour mener des attaques de force brute rapides par dictionnaire de mots de passe sur la page de connexion.",
+      role: "Brute-force de credentials",
+      purpose: "Outil d'attaque par dictionnaire et force brute supportant de nombreux protocoles réseau pour tester la robustesse des mots de passe.",
+      description: "Hydra est un outil de cracking permettant d'automatiser des attaques par dictionnaire sur des services d'authentification tels que SSH, FTP, HTTP, SMB ou RDP. Il est utilisé en pentest pour évaluer la solidité des politiques de mots de passe.",
+      usage: "Utilisé lors de la SAÉ3.Cyber04 pour mener des attaques de force brute rapides par dictionnaire de mots de passe sur la page de connexion afin de tester la résistance des mots de passes.",
       icon: "icons/hydra-logo.png"
     },
     "gobuster": {
       title: "Gobuster",
       category: "Cybersécurité",
-      role: "Brute-force d'URLs & DNS",
-      purpose: "Découverte de répertoires cachés, de fichiers et de sous-domaines sur des serveurs web.",
-      description: "Gobuster est un outil écrit en Go très performant, utilisé pour découvrir les fichiers et répertoires masqués sur un serveur web en testant une liste de mots (wordlist), ainsi que pour énumérer des sous-domaines.",
-      usage: "Déployé dans la SAÉ 3.Cyber04 pour cartographier l'arborescence invisible de la plateforme web dvwa.",
+      role: "Fuzzing de répertoires & découverte web",
+      purpose: "Outil de force brute permettant de découvrir des répertoires, fichiers cachés et sous-domaines sur des serveurs web via des listes de mots.",
+      description: "Gobuster est utilisé pour découvrir les fichiers et répertoires masqués sur un serveur web en testant des milliers de chemins possible depuis un dictionnaire, ainsi que pour énumérer des sous-domaines. Il est couramment utilisé en phase de reconnaissance lors d'audits d'applications web pour trouver des axes exposés.",
+      usage: "Déployé dans la SAÉ3.Cyber04 pour cartographier l'arborescence invisible de la plateforme web dvwa.",
       icon: "icons/gobuster-logo.svg"
     },
     "wireshark": {
-      title: "Wireshark Packet Analyzer",
-      category: "Cybersécurité",
-      role: "Analyse protocolaire & diagnostic forensic",
-      purpose: "Capture en temps réel et inspection approfondie de trames réseaux.",
-      description: "Wireshark est l'outil indispensable pour localiser précisément l'origine de pannes réseau complexes (perte de paquets, lenteurs protocolaires) ou pour identifier des comportements malveillants ou suspects (ex. balayages de ports Nmap, requêtes brutes de brute force ou tentatives d'injection SQL).",
-      usage: "Application de filtres complexes de paquets (ip.addr, tcp.flags), suivi de flux TCP/HTTP (Follow TCP Stream), et exportation de dumps réseau.",
+      title: "Wireshark",
+      category: "Cybersécurité / Réseaux",
+      role: "Analyseur de trames réseau",
+      purpose: "Outil de capture et d'analyse de trafic réseau permettant d'inspecter les paquets en temps réel sur une interface réseau.",
+      description: "Wireshark est l'analyseur de trames réseau le plus utilisé au monde. Il permet de capturer des flux réseau, filtrer les paquets par protocole, localiser précisément l'origine de pannes réseau complexes (perte de paquets, lenteurs protocolaires) et pour identifier des comportements malveillants ou suspects (ex. balayages de ports Nmap, requêtes brutes de brute force ou tentatives d'injection SQL).",
+      usage: "Application de filtres complexes de paquets (ip.addr, tcp.flags), suivi de flux TCP/HTTP. Wireshark est principalement utilisé en TP réseau afin d'observer et comprendre les échanges de protocoles. Il permet aussi de confirmer le fonctionnement d'application avec l'échange de paquet.",
       icon: "icons/Wireshark.png"
     },
-    "linux": {
-      title: "Linux Debian",
-      category: "Réseaux & Systèmes",
-      role: "Administration Système",
-      purpose: "Administration système robuste et hébergement de services d'infrastructure.",
-      description: "Debian est mon système de prédilece pour l'administration et l'hébergement de serveurs de production fiables et hautement disponibles (DNS BIND9, serveurs Apache/Nginx, serveurs de messagerie sécurisés Postfix/Dovecot).",
-      usage: "Écriture de scripts shell (Bash), gestion fine des privilèges système (Sudoers, ACLs), et configuration sécurisée des services réseaux.",
+    "Linux": {
+      title: "Linux et autre distributions (Debian, Ubuntu)",
+      category: "Systèmes",
+      role: "Système d'exploitation open source",
+      purpose: "Système d'exploitation open source basé sur le noyau Linux, utilisé aussi bien sur des serveurs, postes de travail que des équipements embarqués.",
+      description: "Linux est le système d'exploitation open source le plus répandu dans le monde professionnel et académique. Administré principalement en ligne de commande, il offre une grande flexibilité, une stabilité accruee et constitue la base de nombreuses distributions spécialisées (Debian, Kali, Ubuntu…).",
+      usage: "Utilisé tout au long du BUT R&T comme environnement principal d'administration système, de scripting Bash et de déploiement de services réseau, aussi bien en machine native qu'en machine virtuelle.",
       icon: "devicon-linux-plain"
     },
     "windows": {
@@ -367,17 +367,17 @@ intranet IN A 192.168.3.3`
       icon: "icons/virtualbox.png"
     },
     "cisco": {
-      title: "Cisco IOS (Command Line)",
-      category: "Réseaux & Systèmes",
-      role: "Configuration de commutateurs & routeurs",
-      purpose: "Configuration CLI avancée et routage de flux inter-sites.",
-      description: "Utilisé pour la programmation en ligne de commande de commutateurs (Switches) et routeurs de marque Cisco. Permet de structurer le réseau physique en VLANs logiques et d'automatiser le basculement dynamique des routes logiques en cas de coupure de lien.",
-      usage: "Configuration d'agrégations de liens (EtherChannel), routage inter-VLAN, protocole Spanning Tree (STP), routage dynamique (OSPF / OSPFv3) et listes de contrôle d'accès (ACLs) WAN.",
+      title: "Cisco IOS",
+      category: "Réseaux",
+      role: "Système d'exploitation pour équipements Cisco",
+      purpose: "OS embarqué sur les routeurs et switchs Cisco, administré en ligne de commande pour configurer et gérer les équipements réseau.",
+      description: "Cisco IOS (Internetwork Operating System) est le firmware qui anime la majorité des équipements réseau Cisco. Il permet de configurer le routage (OSPF, RIP, BGP), les VLANs, les ACL, le NAT/PAT, les protocoles de spanning tree et les protocoles de défenses réseaux via une interface CLI structurée.",
+      usage: "tilisé dans les SAE et TP réseaux pour configurer des routeurs et switchs Cisco, mettre en place des topologies IP et administrer des protocoles de routage dynamique, VPN IPsec, protocoles de défenses. Les équipements Cisco sont la base de notre formation, nous nous entrainons à configurer Switch et Routeur à chaque TP afin d'avoir un réseaux stable, fonctionnel, redondant et sécurisé.",
       icon: "icons/Cisco_logo.png"
     },
-    "cisco-pt": {
+    "packet-tracer": {
       title: "Cisco Packet Tracer",
-      category: "Réseaux & Systèmes",
+      category: "Réseaux",
       role: "Simulation de topologies réseaux",
       purpose: "Conception, configuration et simulation visuelle d'infrastructures réseaux complexes.",
       description: "Cisco Packet Tracer est un outil de simulation puissant qui permet d'expérimenter le comportement des réseaux. Il permet de connecter virtuellement des commutateurs, des routeurs, des points d'accès et des serveurs pour tester des protocoles de routage, de filtrage et d'adressage sans matériel physique.",
