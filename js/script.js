@@ -291,7 +291,7 @@ intranet IN A 192.168.3.3`
       role: "Scanner de ports & Reconnaissance",
       purpose: "Découverte d'hôtes actifs, de ports ouverts et détection de services ou de systèmes d'exploitation.",
       description: "Nmap (Network Mapper) est le scanner de sécurité réseau de référence. Il permet d'effectuer un inventaire réseau précis, d'identifier les ports ouverts et de détecter les vulnérabilités potentielles via son moteur de scripts NSE (Nmap Scripting Engine).",
-      usage: "Exploité au début de l'audit de la SAÉ 3.Cyber04 pour scanner la cible DVWA et repérer les services actifs (HTTP, SSH).",
+      usage: "Exploité au début de l'audit de la SAÉ3.Cyber04 pour scanner la cible DVWA et repérer les services actifs (HTTP, SSH).",
       icon: "icons/nmap.png"
     },
     "metasploit": {
