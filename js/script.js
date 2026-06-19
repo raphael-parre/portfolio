@@ -281,7 +281,7 @@ intranet IN A 192.168.3.3`
       category: "Cybersécurité",
       role: "Outil d'audit offensif & Pentesting",
       purpose: "Distribution Linux dédié à la cybersécurité et aux tests de pénétration, préinstallée avec des centaines d'outils offensifs.",
-      description: "Kali Linux est la distribution standard de l'industrie pour les audits de sécurité. Elle regroupe des centaines d'outils spécialisés dans la recherche de vulnérabilités, l'analyse réseau, l'exploitation de failles et le reverse engineering.",
+      description: "Kali Linux est la distribution par exellence pour la cybersécurité. Elle regroupe des centaines d'outils spécialisés dans la recherche de vulnérabilités, l'analyse réseau, l'exploitation de failles, le reverse engineering, des outils de cracking.",
       usage: "Utilisé lors de la SAE3.Cyber04 pour cartographier le réseau, ensuite intercepter les flux avec Wireshark, tester la robustesse des mots de passe avec Hydra et analyser la sécurité applicative.",
       icon: "icons/kali_logo.avif"
     },
@@ -290,7 +290,7 @@ intranet IN A 192.168.3.3`
       category: "Cybersécurité",
       role: "Scanner de ports & Reconnaissance",
       purpose: "Découverte d'hôtes actifs, de ports ouverts et détection de services ou de systèmes d'exploitation.",
-      description: "Nmap (Network Mapper) est le scanner de sécurité réseau de référence. Il permet d'effectuer un inventaire réseau précis, d'identifier les ports ouverts et de détecter les vulnérabilités potentielles via son moteur de scripts NSE (Nmap Scripting Engine).",
+      description: "Nmap est un scanner de ports libre énormément utilisé pour débuter une phase de reconnaissance. Il permet d'obtenir des informations sur le système d'exploitation, un inventaire réseau précis et d'identifier les ports ouverts.",
       usage: "Exploité au début de l'audit de la SAÉ3.Cyber04 pour scanner la cible DVWA et repérer les services actifs (HTTP, SSH).",
       icon: "icons/nmap.png"
     },
@@ -299,7 +299,7 @@ intranet IN A 192.168.3.3`
       category: "Cybersécurité",
       role: "Tests d'exploitation de vulnérabilités",
       purpose: "Plateforme open source de recherche de vulnérabilités, développement et exécution d'exploits contre des systèmes.",
-      description: "Metasploit est le framework d'exploitation le plus utilisé en pentest. Il permet d'avoir accès à des milliers d'exploits, payload et modules auxilière permettant d'automatiser l'exploitation de failles et de gérer des sessions d'accès distant.",
+      description: "Metasploit est l'outil d'exploitation le plus utilisé en pentest. Il permet d'avoir accès à des milliers d'exploits, payload et modules auxilière permettant d'automatiser l'exploitation de failles basées sur des vulnérabilités connues.",
       usage: "Utilisé en SAE3.Cyber04 pour exploiter des vulnérabilités identifiées sur la machine cible et obtenir des accès privilégiés dans un environnement de lab isolé.",
       icon: "icons/metasploit.png"
     },
@@ -307,8 +307,8 @@ intranet IN A 192.168.3.3`
       title: "Burp Suite",
       category: "Cybersécurité",
       role: "Proxy HTTP d'interception et audit d'applications Web",
-      purpose: "Suite d'outil dédiés à l'analyse et l'audit de sécurité des applications Web en interceptant et modifiant le trafic HTTP/HTTPS.",
-      description: "Burp Suite est la boîte à outils leader pour l'audit d'applications Web. Il agit comme un proxy intermédiaire, permettant d'intercepter les paquets, de modifier des requêtes et réponses, et d'automatiser des tests d'injection.",
+      purpose: "Application dédiés à l'analyse et l'audit de sécurité des applications Web en interceptant et modifiant le trafic HTTP/HTTPS.",
+      description: "Burp Suite est la boîte à outils principal pour l'audit d'applications Web. Burp Suite est utilisé soit pour la sécurisation ou l'attaque d'applications web. De plus, Burp Suite agit comme un proxy intermédiaire, permettant d'intercepter les paquets, de modifier des requêtes et réponses, et d'automatiser des tests d'injection.",
       usage: "Utilisé dans la SAÉ3.Cyber04 pour analyser les échanges HTTP, intercepter les requêtes d'authentification Captcha de DVWA et exploiter les variables de session.",
       icon: "icons/BurpSuite_logo.png"
     },
@@ -317,8 +317,8 @@ intranet IN A 192.168.3.3`
       category: "Cybersécurité",
       role: "Brute-force de credentials",
       purpose: "Outil d'attaque par dictionnaire et force brute supportant de nombreux protocoles réseau pour tester la robustesse des mots de passe.",
-      description: "Hydra est un outil de cracking permettant d'automatiser des attaques par dictionnaire sur des services d'authentification tels que SSH, FTP, HTTP, SMB ou RDP. Il est utilisé en pentest pour évaluer la solidité des politiques de mots de passe.",
-      usage: "Utilisé lors de la SAÉ3.Cyber04 pour mener des attaques de force brute rapides par dictionnaire de mots de passe sur la page de connexion afin de tester la résistance des mots de passes.",
+      description: "Hydra est un outil de cracking permettant d'automatiser des attaques par dictionnaire sur des services d'authentification tels que SSH, FTP, HTTP, SMB ou RDP. Il est utilisé en pentest pour évaluer la solidité des mots de passe.",
+      usage: "Utilisé lors de la SAÉ3.Cyber04 et SAE401 pour mener des attaques de force brute rapides par dictionnaire afin de tester la résistance des mots de passes et obtenir un accès.",
       icon: "icons/hydra-logo.png"
     },
     "gobuster": {
@@ -327,7 +327,7 @@ intranet IN A 192.168.3.3`
       role: "Fuzzing de répertoires & découverte web",
       purpose: "Outil de force brute permettant de découvrir des répertoires, fichiers cachés et sous-domaines sur des serveurs web via des listes de mots.",
       description: "Gobuster est utilisé pour découvrir les fichiers et répertoires masqués sur un serveur web en testant des milliers de chemins possible depuis un dictionnaire, ainsi que pour énumérer des sous-domaines. Il est couramment utilisé en phase de reconnaissance lors d'audits d'applications web pour trouver des axes exposés.",
-      usage: "Déployé dans la SAÉ3.Cyber04 pour cartographier l'arborescence invisible de la plateforme web dvwa.",
+      usage: "Déployé dans la SAE3.Cyber04 pour cartographier l'arborescence invisible de la plateforme web dvwa.",
       icon: "icons/gobuster-logo.svg"
     },
     "wireshark": {
@@ -353,7 +353,7 @@ intranet IN A 192.168.3.3`
       category: "Réseaux & Systèmes",
       role: "Système d'exploitation serveur Microsoft",
       purpose: "OS serveur de Microsoft permettant de gérer des infrastructures d'entreprise avec Active Directory, DNS, DHCP et services de fichiers.",
-      description: "Windows Server est la plateforme serveur de référence dans les environnements Microsoft. Il centralise la gestion des comptes utilisateurs via Active Directory, le contrôle d'accès aux ressources partagées de fichiers et héberge des services critiques tels que DNS, DHCP, IIS et RDS.",
+      description: "Windows Server est la plateforme serveur dans les environnements Microsoft. Il centralise la gestion des comptes utilisateurs via Active Directory, le contrôle d'accès aux ressources partagées de fichiers et héberge des services critiques tels que DNS, DHCP, IIS et RDS.",
       usage: "Utilisé lors de SAE et TP pour la configuration de services DHCP/DNS Windows.",
       icon: "devicon-windows8-original"
     },
@@ -371,7 +371,7 @@ intranet IN A 192.168.3.3`
       category: "Réseaux",
       role: "Système d'exploitation pour équipements Cisco",
       purpose: "OS embarqué sur les routeurs et switchs Cisco, administré en ligne de commande pour configurer et gérer les équipements réseau.",
-      description: "Cisco IOS (Internetwork Operating System) est le firmware qui anime la majorité des équipements réseau Cisco. Il permet de configurer le routage (OSPF, RIP, BGP), les VLANs, les ACL, des applications le NAT/PAT, les protocoles de spanning tree et les protocoles de défenses réseaux via une interface CLI structurée.",
+      description: "Cisco IOS (Internetwork Operating System) est le système d'exploitation qui configure la majorité des équipements réseau Cisco. Il permet de configurer le routage (OSPF, RIP, BGP), les VLANs, les ACL, des applications le NAT/PAT, les protocoles de spanning tree et les protocoles de défenses réseaux via une interface CLI structurée.",
       usage: "tilisé dans les SAE et TP réseaux pour configurer des routeurs et switchs Cisco, mettre en place des topologies IP et administrer des protocoles de routage dynamique, VPN IPsec, protocoles de défenses. Les équipements Cisco sont la base de notre formation, nous nous entrainons à configurer Switch et Routeur à chaque TP afin d'avoir un réseaux stable, fonctionnel, redondant et sécurisé.",
       icon: "icons/Cisco_logo.png"
     },
@@ -380,8 +380,8 @@ intranet IN A 192.168.3.3`
       category: "Réseaux",
       role: "Simulation de topologies réseaux",
       purpose: "Logiciel de simulation réseau développé par Cisco permettant de concevoir, configurer et tester des topologies sans équipement physique.",
-      description: "Packet Tracer offre un environnement virtuel complet pour expérimenter la configuration d'équipements Cisco. Il supporte le routage, le switching, la VoIP, le sans-fil et les protocoles IoT, ce qui en fait un outil pédagogique incontournable pour les formations réseau.",
-      usage: "Utilisé dans la SAÉ2.01 et durant tout le BUT R&T pour simuler des architectures d'entreprises, simuler des configurations OSPF/VLAN/NAT, simuler des connexion Wi-Fi et serveur Web/DNS/Mail afin de valider des topologies.",
+      description: "Packet Tracer est une application offrant un environnement virtuel complet pour expérimenter la configuration d'équipements Cisco. Il supporte le routage, la VoIP, le Wi-FI et les protocoles IoT, ce qui en fait un outil incontournable pour les formations réseau et la créaion d'architecture réseau.",
+      usage: "Utilisé dans la SAE2.01 et durant tout le BUT R&T pour simuler des architectures d'entreprises, simuler des configurations OSPF/VLAN/NAT, simuler des connexion Wi-Fi et serveur Web/DNS/Mail afin de valider des topologies.",
       icon: "icons/Cisco_packet_tracer.webp"
     },
     "docker": {
@@ -389,7 +389,7 @@ intranet IN A 192.168.3.3`
       category: "Réseaux & Systèmes",
       role: "Plateforme de conteneurisation",
       purpose: "Outil de conteneurisation permettant d'empaqueter des applications et leurs dépendances dans des conteneurs légers et portables.",
-      description: "Docker permet d'encapsuler des applications et services applicatifs (serveurs web, bases de données ou conteneurs d'outils d'audit cyber) au sein de environnement isolés appellé conteneurs, plus légers que des machines virtuelles. Cela évite les conflits de dépendances système, accélère grandement le déploiement et améliore la reproductibilité.",
+      description: "Docker permet d'encapsuler des applications et services applicatifs (serveurs web, bases de données ou conteneurs d'outils d'audit cyber) au sein d'environnement isolés appellé conteneurs, plus légers que des machines virtuelles. Cela évite les conflits de dépendances système, accélère grandement le déploiement et améliore la reproductibilité.",
       usage: "Utilisé durant les TP pour déployer rapidement des services (serveurs web) et tester des environnements.",
       icon: "devicon-docker-plain"
     },
@@ -407,7 +407,7 @@ intranet IN A 192.168.3.3`
       category: "Réseaux & Systèmes",
       role: "Gestionnaire de versions de projets & scripts",
       purpose: "Système de contrôle de version permettant de suivre les modifications du code source et de collaborer efficacement en équipe.",
-      description: "Essentiel pour maintenir un historique propre des modifications apportées aux scripts d'administration système ou aux fichiers de configurations réseaux, et pour collaborer efficacement à plusieurs sur des maquettes de déploiement.",
+      description: "Git est essentiel pour maintenir un historique des modifications apportées aux scripts d'administration système ou aux fichiers de configurations réseaux, et pour collaborer efficacement à plusieurs sur des projets de déploiement.",
       usage: "Commandes de base (git init, add, commit, push, pull, clone).",
       icon: "devicon-git-plain"
     },
