@@ -787,7 +787,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  background-color: transaparent;
+  background-color: transparent;
   transition: transform var(--transition);
 }
 
