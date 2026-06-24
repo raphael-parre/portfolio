@@ -791,15 +791,21 @@ a {
   transition: transform var(--transition);
 }
 
-.project-preview i {
-  font-size: 5rem;
-  color: var(--text-muted);
-  transition: transform var(--transition);
+.project-preview img[style*="object-position"] {
+  object-fit: cover;
+  object-position: top center;
 }
 
 .project-preview img.img-letterbox {
   object-fit: contain;
-  background-color: var(--bg-tertiary);
+  object-position: center center;
+  background-color: var(--bg-secondary);
+}
+
+.project-preview i {
+  font-size: 5rem;
+  color: var(--text-muted);
+  transition: transform var(--transition);
 }
 
 .project-card:hover .project-preview {
