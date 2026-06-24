@@ -797,6 +797,11 @@ a {
   transition: transform var(--transition);
 }
 
+.project-preview img.img-letterbox {
+  object-fit: contain;
+  background-color: var(--bg-tertiary);
+}
+
 .project-card:hover .project-preview {
   border-color: var(--text-primary);
 }
